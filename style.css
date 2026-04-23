@@ -1,0 +1,102 @@
+body {
+  margin:0;
+  font-family: Segoe UI, Arial, sans-serif;
+  background:#f5f6fa;
+}
+.hidden { display:none; }
+
+.login {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+}
+
+.app { display:flex; }
+
+.sidebar {
+  width:240px;
+  background:#1f1f1f;
+  color:#fff;
+  padding:20px;
+  height:100vh;
+}
+
+.sidebar button {
+  width:100%;
+  padding:12px;
+  margin-bottom:8px;
+  background:none;
+  border:none;
+  color:#ccc;
+  text-align:left;
+  cursor:pointer;
+  border-radius:6px;
+}
+.sidebar button:hover {
+  background:#333;
+  color:#fff;
+}
+
+.main {
+  flex:1;
+  padding:25px;
+}
+
+.topbar {
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:20px;
+}
+
+.topbar input {
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #ddd;
+}
+
+.cards {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+  gap:15px;
+  margin-bottom:20px;
+}
+
+.card {
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.ai-panel, .chat-panel, canvas, table {
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  margin-top:20px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.chat-box {
+  height:200px;
+  overflow-y:auto;
+  border:1px solid #eee;
+  padding:10px;
+  margin-bottom:10px;
+}
+
+.chat-input {
+  display:flex;
+  gap:10px;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td {
+  padding:10px;
+  border-bottom:1px solid #ddd;
+}
