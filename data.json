@@ -1,0 +1,46 @@
+{
+  "channel": [
+    {
+      "name": "Supermarket",
+      "sales": 80,
+      "cost": 70,
+      "gm": 15
+    },
+    {
+      "name": "Restaurant",
+      "sales": 40,
+      "cost": 35,
+      "gm": 12
+    }
+  ],
+  "region": [
+    {
+      "name": "East",
+      "sales": 60,
+      "cost": 50,
+      "gm": 16
+    },
+    {
+      "name": "West",
+      "sales": 50,
+      "cost": 43,
+      "gm": 14
+    }
+  ],
+  "unit": [
+    {
+      "name": "Unit 1",
+      "sales": 70,
+      "cost": 60,
+      "gm": 14
+    }
+  ],
+  "category": [
+    {
+      "name": "Detergent",
+      "sales": 50,
+      "cost": 40,
+      "gm": 20
+    }
+  ]
+}

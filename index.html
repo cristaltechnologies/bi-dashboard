@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cristal BI Dashboard</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="loginPage" class="login">
+  <h2>Cristal BI Login</h2>
+  <input id="user" placeholder="Username"><br>
+  <input id="pass" type="password" placeholder="Password"><br>
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="app" class="app hidden">
+
+  <div class="sidebar">
+    <h2>BI Dashboard</h2>
+    <button onclick="loadView('channel')">Channel</button>
+    <button onclick="loadView('region')">Region</button>
+    <button onclick="loadView('unit')">Sales Unit</button>
+    <button onclick="loadView('category')">Category</button>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <input id="search" placeholder="Search..." onkeyup="filterTable()">
+      <input type="file" id="fileUpload">
+    </div>
+
+    <h2 id="title">Dashboard</h2>
+
+    <div class="cards" id="kpis"></div>
+
+    <canvas id="chart"></canvas>
+
+    <table id="table"></table>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
